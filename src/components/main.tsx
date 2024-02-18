@@ -9,7 +9,7 @@ const MainComponent = () => {
   return (
     <div className="relative text-white w-9/12">
       <div className={catamaran.className}>
-        <div className="px-24 py-12">
+        <div className="px-0 md:px-24 py-12">
           <h2 className="text-4xl">
             Hey, <span className="text-[#ecff86]">Yash Gupta!</span>
           </h2>

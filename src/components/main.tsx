@@ -14,7 +14,7 @@ const MainComponent = () => {
             Hey, <span className="text-[#ecff86]">Yash Gupta!</span>
           </h2>
           <h2 className="text-4xl">
-            How's your prep for the{" "}
+            How{"'"}s your prep for the{" "}
             <span className="text-[#ecff86]">March SAT</span>
           </h2>
         </div>

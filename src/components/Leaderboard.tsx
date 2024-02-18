@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { BiSolidAward } from "react-icons/bi";
-import useGenerateMockLeaderboard from "./Hooks/useGenerateMockLeaderboard";
+import GenerateMockLeaderboard from "./GenerateMockLeaderboard";
 
 const Leaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState<
@@ -9,7 +9,7 @@ const Leaderboard = () => {
   >([]);
   useEffect(() => {
     const fetchData = async () => {
-      const data = await useGenerateMockLeaderboard();
+      const data = await GenerateMockLeaderboard();
       setLeaderboardData(data);
     };
 

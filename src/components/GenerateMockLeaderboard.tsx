@@ -1,4 +1,4 @@
-const useGenerateMockLeaderboard = () => {
+const GenerateMockLeaderboard = () => {
   const mockLeaderboard = [];
   const totalUsers = 60;
   const yourPosition = 54;
@@ -20,4 +20,4 @@ const useGenerateMockLeaderboard = () => {
   return mockLeaderboard;
 };
 
-export default useGenerateMockLeaderboard;
+export default GenerateMockLeaderboard;

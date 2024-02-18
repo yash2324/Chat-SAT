@@ -1,12 +1,11 @@
 import { gray } from "@/utils/constants";
 import React from "react";
 import { PiSignOutBold } from "react-icons/pi";
-import Progress from "./Progress";
-import { BiSolidAward } from "react-icons/bi";
+import QuizCard from "./QuizCard";
 
 const Left = () => {
   return (
-    <div className="text-white w-3/12 border-r-[0.5px] border-black shadow-2xl h-screen">
+    <div className="relative z-10 text-white w-3/12 border-r-[0.5px] border-black shadow-2xl h-screen">
       <div className="flex items-center gap-2 p-4">
         <img src={gray} alt="Logo" className="w-8 h-8 rounded-full bg-white" />
         <div>
@@ -19,20 +18,7 @@ const Left = () => {
           New Thread
         </button>
       </div>
-      <div className="flex items-center justify-center w-11/12  mt-3 rounded-2xl border border-white/10 bg-white/10 shadow-md mx-auto">
-        <Progress percentage={4 / 7} />
-        <div>
-          <div className="flex items-center">
-            <BiSolidAward color="#eeff87" size={60} />
-            <h2>
-              0/223 <span>XP</span>
-            </h2>
-          </div>
-          <button className="  mt-3 mx-auto rounded-lg py-2 border border-white/10 bg-white/10 from-[#67765c] to-[#5d7b77] px-5 text-left text-sm text-[#eeff87] transition-all hover:bg-transparent hover:bg-gradient-to-b">
-            Take a Quiz
-          </button>
-        </div>
-      </div>
+      <QuizCard />
       <div className="flex items-center p-4 gap-2 mt-2">
         <img src={gray} className="w-12 h-12 rounded-full" />
         <h1 className="text-2xl">Yash Gupta</h1>

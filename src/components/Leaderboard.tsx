@@ -1,9 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { BiSolidAward } from "react-icons/bi";
-import useGenerateMockLeaderboard from "./useGenerateMockLeaderboard";
+import useGenerateMockLeaderboard from "./Hooks/useGenerateMockLeaderboard";
 
 const Leaderboard = () => {
-  const leaderboardData = useGenerateMockLeaderboard();
+  const [leaderboardData, setLeaderboardData] = useState<
+    { rank: number; name: string; xp: string; avatar: string }[]
+  >([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await useGenerateMockLeaderboard();
+      setLeaderboardData(data);
+    };
+
+    fetchData();
+  }, []);
 
   const yourPosition = 54;
   return (

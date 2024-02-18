@@ -19,7 +19,7 @@ const MainComponent = () => {
           </h2>
         </div>
       </div>
-      <div className="-ml-60 grid grid-cols-2 gap-5">
+      <div className="lg:-ml-60 md:grid md:grid-cols-2 flex flex-col gap-5">
         <div className="rounded-2xl w-[50%] border border-white/10 bg-white/10 flex justify-center ml-auto flex-col p-3">
           <div className="text-[#747575] text-sm">
             <p>Last Practice Linear etc etc</p>

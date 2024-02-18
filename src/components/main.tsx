@@ -7,7 +7,7 @@ const catamaran = Catamaran({
 });
 const MainComponent = () => {
   return (
-    <div className="relative text-white w-9/12">
+    <div className="relative mt-12 lg:mt-0 text-white w-9/12">
       <div className={catamaran.className}>
         <div className="px-0 md:px-24 py-12">
           <h2 className="text-4xl">
